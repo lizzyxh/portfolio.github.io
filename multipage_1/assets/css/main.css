@@ -394,22 +394,28 @@ h3 #progressspacing{
     padding-bottom: 2em;
 }
 
+.portfoliopieces{
+	width: 33.33333%;
+	height: 22em;
+    text-align: center;
+  	padding: 0.15em;
+  	float: left;
+  	opacity: 1;
+  	transition: opacity .5s;
+}
+
 .portfoliopieces a{
 	background: rgb(248, 248, 248);
     display: block;
     width:100%;
 }
 
-.portfoliopieces{
-	width: 33.33333%;
-    text-align: center;
-  	padding: 0.15em;
-  	float: left;
+
+.portfoliopieces img:hover{
+	opacity: .4;
 }
 
-/*#project1{
-	width: 33%;
-}
+/*
 
 #project2{
 	width: 33%;
@@ -430,6 +436,11 @@ h3 #progressspacing{
 	width: 33%;
 }
 */
+
+article#portfoliospace{
+	padding: 1em;
+}
+
 figure{
 
 }
@@ -443,6 +454,7 @@ figcaption{
     font-weight: 400;
     letter-spacing: .07em;
     text-decoration: none;
+    height: 8em;
 }
 
 figcaption h3{
@@ -467,20 +479,32 @@ figcaption a:hover{
     text-decoration: none;
 }
 
+.casestudylink{
+	color: #000;
+    font-size: 2.5em;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+.portfoliopieces:hover .casestudylink{
+    opacity: 1;
+}
+
 /* Portfolio Nav */
 
 ul.portfolionav{
 	list-style-type: none;
 	margin: 10px;
-	padding: 1.12em;
+	padding-bottom: 1.12em;
 	overflow: hidden;
 	color: #2A5B78;
 	font-size: 1em;
 	text-align: center;
 	text-transform: uppercase;
-	border-top: 4px solid #e3f8f3;
+	display: inline-block;
+	/*border-top: 4px solid #e3f8f3;
     border-bottom: 4px solid #e3f8f3;
-    border-bottom-style: solid;
+    border-bottom-style: solid;*/
 }
 
 	ul.portfolionav li {
@@ -501,10 +525,20 @@ ul.portfolionav{
 		ul.portfolionav li a:active{
 				color: #009FFF;
 				background-color: rgba(221, 221, 221, 0.28);
+				border-bottom: 4px solid #e3f8f3; 
 			}			
 		ul.portfolionav li a:hover{
 			color: #009FFF;
+			border-bottom: 4px solid #e3f8f3; 
 		}
+#portfolioNav{
+	padding: 0.5em;
+}
+#filtericon{
+	width: 10%;
+    display: inline-block;
+    padding: 0em 1em;
+}
 
 /* Contact */
 
